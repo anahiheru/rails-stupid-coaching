@@ -1,0 +1,7 @@
+<h1>Stupid Coaching</h1>
+<% if @question.present? %>
+  <p>You asked: <%= @question %></p>
+  <p>Your coach answers: <%= @answer %></p>
+<% end %>
+
+<%= link_to 'Ask another question', ask_path %>
